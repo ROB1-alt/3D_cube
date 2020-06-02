@@ -1,3 +1,8 @@
+body{
+    background-image: url('./img/wp2586787.jpg');
+}
+
+
 .cube
 {
     position: absolute;
@@ -23,6 +28,21 @@
     font-size: 100px;
     align-items: center;
     justify-content: center;
+    background-size:cover;
+    image-rendering: crisp-edges; /*firefox*/
+    image-rendering: pixelated; /*chrome*/
 }
 
 .cube .face.x-pos { transform: rotateY(90deg) translateZ(200px); }
+.cube .face.x-neg { transform: rotateY(-90deg) translateZ(200px); }
+.cube .face.y-pos { transform: rotateX(-90deg) translateZ(200px); }
+.cube .face.y-neg { transform: rotateX(90deg) translateZ(200px); }
+.cube .face.z-pos { transform: rotateY(0deg) translateZ(200px); }
+.cube .face.z-neg { transform: rotateY(180deg) translateZ(200px); }
+
+.cube .face.x-pos { background-image: url('./img/barrel_side.png'); }
+.cube .face.x-neg { background-image: url('./img/barrel_side.png'); }
+.cube .face.y-pos { background-image: url('./img/barrel_top_open.png'); }
+.cube .face.y-neg { background-image: url('./img/barrel_bottom.png'); }
+.cube .face.z-pos { background-image: url('./img/barrel_side.png'); }
+.cube .face.z-neg { background-image: url('./img/barrel_side.png'); }
