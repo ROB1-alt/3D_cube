@@ -15,19 +15,24 @@ body{
     transform-style: preserve-3d;
 }
 
+.cube .shadow
+{
+    position: absolute;
+    top: -400px;
+    left: -400px;
+    width: 800px;
+    height: 800px;
+    transform: rotateX(-90deg) translateZ(200px);
+    background-image: radial-gradient(closest-side, #000000, #00000000);
+}
+
 .cube .face
 {
-    display: flex;
     position: absolute;
     top: -200px;
     left: -200px;
     width: 400px;
     height: 400px;
-    background: red;
-    color: #ffffff;
-    font-size: 100px;
-    align-items: center;
-    justify-content: center;
     background-size:cover;
     image-rendering: crisp-edges; /*firefox*/
     image-rendering: pixelated; /*chrome*/
